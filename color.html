@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/style.css">
-    <title>BDAY COLOR</title>
-</head>
-<body>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script> 
+   <!-- Import Milkyway font -->
+  <link href="https://fonts.cdnfonts.com/css/milkyway-3" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>BDAY | Color</title>
+  
+  <!-- Custom Tailwind configuration manual nalang muna-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'custom-bg': '#F8F9FA',
+            'custom-red': '#E63946',
+            'custom-black': '#2D2D2D',
+            'custom-holder': '#A0A0A0',
+            'custom-white': '#FFFFFF',
+          },
+          fontFamily: {
+            'milkyway': ['Milkyway', 'sans-serif'],
+            'segoe': ['Segoe UI', 'sans-serif'],
+          },
+          borderRadius: {
+            'custom-24': '24px',
+          },
+          boxShadow: {
+            'custom': '0 6px 12px rgba(0, 0, 0, 0.15)',
+          },
+          spacing: {
+            '100px': '100px',
+          }
+        }
+      }
+    }
+  </script>
 
+</head>
+<body class="fixed top-0 left-0 flex justify-center items-center w-full h-full bg-custom-bg font-segoe">
+  
+  <div class="container h-[550px] w-[800px] rounded-custom-24 mx-auto p-[25px] shadow-custom bg-custom-white">
     
-    <script href="/src/main.js"></script>
+    <!-- Header -->
+    <div>
+      <h1 class=" text-custom-red text-[48px] ml-4">
+        <i class='bx  bxs-palette'><span class="font-milkyway">COLOR</span>
+        </i> 
+        </h1>
+      <!-- <p class="text-custom-holder m-0 p-0"></p> -->
+
+    <!-- 404 message -->
+     <div class="text-center justify-center items-center">
+        <img class="m-auto w-[600px]" src="public/404.png" alt="404">
+        <p class="text-custom-holder">Image yan kaya malabo wag kana magreklamo pagod nako
+            <br>
+            -jani
+        </p>
+     </div>
+
+     <!-- balik -->
+     <a href="color.html">
+        <button 
+        type="button"
+        class="w-[120px] p-5 bg-custom-red rounded-custom-24 text-custom-white shadow-custom font-bold hover:bg-custom-white hover:border hover:border-custom-red hover:text-custom-red transition-all duration-300">
+        <i class='bx bxs-left-arrow-alt text-[20px]'><span class="font-milkyway">BACK</span></i>
+      </button>
+      </a>
+    
+    </div>
+
+  </div>
 </body>
 </html>

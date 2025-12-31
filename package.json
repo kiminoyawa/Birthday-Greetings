@@ -9,10 +9,23 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "tailwindcss": "^4.1.18",
     "vite": "^7.2.4"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "tailwindcss": "^4.1.18"
-  }
+    "@tailwindcss/vite": "^4.1.18"
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiminoyawa/Birthday-Greetings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiminoyawa/Birthday-Greetings/issues"
+  },
+  "homepage": "https://github.com/kiminoyawa/Birthday-Greetings#readme"
 }

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Import Milkyway font -->
+  <script src="https://cdn.tailwindcss.com"></script> 
+   <!-- Import Milkyway font -->
   <link href="https://fonts.cdnfonts.com/css/milkyway-3" rel="stylesheet">
-  <title>Styled Login</title>
+  <title>BDAY | Login</title>
   
-  <!-- Custom Tailwind configuration -->
+  <!-- Custom Tailwind configuration manual nalang muna-->
   <script>
     tailwind.config = {
       theme: {
@@ -37,22 +37,7 @@
       }
     }
   </script>
-  
-  <!-- Additional custom styles if needed -->
-  <style>
-    /* Reset and base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    
-    /* Custom focus style for inputs */
-    input:focus {
-      border-color: #E63946 !important;
-      outline: none !important;
-    }
-  </style>
+
 </head>
 <body class="fixed top-0 left-0 flex justify-center items-center w-full h-full bg-custom-bg font-segoe">
   
@@ -60,55 +45,14 @@
     
     <!-- Header -->
     <div class="text-center">
-      <h1 class="font-milkyway text-custom-red text-[48px] mb-0">LOGIN</h1>
-      <!-- <p class="text-custom-holder m-0 p-0">WELCOME USERS!</p> -->
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.cdnfonts.com/css/milkyway-3" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>bdy-prjct</title>
-  </head>
-  <body>
-   
-    <div class="container">
-      <div class="login">
-        <div class="header">
-          <h1 class="text-center">WELCOME!</h1>
-        </div>
+      <h1 class="font-milkyway text-custom-red text-[48px] mb-0">WELCOME!</h1>
+      <!-- <p class="text-custom-holder m-0 p-0"></p> -->
 
-        <form action="">
-         <div>
-           <label for="">USERNAME</label>
-           <br>
-           <input type="text" placeholder="najiiii">
-         </div>
-
-          <div>
-           <label for="">PASSWORD</label>
-           <br>
-           <input type="password" placeholder="enter 8 digit password">
-         </div>
-
-         <button>
-          SUBMIT
-         </button>
-
-          <p class="text-center mt-2">Dont have an account? 
-            <a href="" class="text-[#E63946]">CONTACT ME!</a>
-          </p>
-        </form>
-
-      </div>
->>>>>>> 5a19997c924d033b0f874a7f05825cf7888ddcf1
-    </div>
-    
     <!-- Form -->
     <form class="px-100px py-5">
       <!-- Username Field -->
       <div class="mb-8">
-        <label class="block text-custom-black font-bold mb-3">USERNAME</label>
+        <label class="block text-start text-custom-black font-bold mb-2">USERNAME</label>
         <input 
           type="text" 
           placeholder="Enter username" 
@@ -117,7 +61,7 @@
       
       <!-- Password Field -->
       <div class="mb-8">
-        <label class="block text-custom-black font-bold mb-3">PASSWORD</label>
+        <label class="block text-start text-custom-black font-bold mb-2">PASSWORD</label>
         <input 
           type="password" 
           placeholder="Enter password" 
@@ -125,11 +69,13 @@
       </div>
       
       <!-- Submit Button -->
-      <button 
+      <a href="color.html">
+        <button 
         type="button"
         class="w-full p-5 bg-custom-red rounded-custom-24 text-custom-white shadow-custom font-bold hover:bg-custom-white hover:border hover:border-custom-red hover:text-custom-red transition-all duration-300">
         SUBMIT
       </button>
+      </a>
       
       <!-- Footer Text -->
       <p class="text-center mt-6 text-custom-holder">
@@ -138,6 +84,8 @@
       </p>
     </form>
     
+    </div>
+
   </div>
 </body>
 </html>
