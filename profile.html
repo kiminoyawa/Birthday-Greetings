@@ -69,9 +69,12 @@
 
 <!-- set the login container in the center of the screen -->
 <body class="min-h-screen flex justify-center items-center bg-custom-bg font-segoe p-4 md:p-6">
+
+  <!-- overlay transition  -->
+  <div id="transitionOverlay" class="transition-overlay"></div>
  
   <!-- log in form -->
-  <div class="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] xl:max-w-[800px]
+  <div id="pageContent" class="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] xl:max-w-[800px]
   rounded-custom-24 md:rounded-custom-24 
   shadow-custom 
   bg-custom-white 
@@ -281,5 +284,6 @@
 
 
 <script src="src/notif.js"></script>
+<script src="src/fade.js"></script>
 </body>
 </html>

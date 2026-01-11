@@ -7,6 +7,7 @@
    <!-- Import Milkyway font -->
   <link href="https://fonts.cdnfonts.com/css/milkyway-3" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="src/style.css">
   <title>BDAY | Cake</title>
   
   <!-- Custom Tailwind configuration manual nalang muna-->
@@ -64,9 +65,12 @@
 
 <!-- set the login container in the center of the screen -->
 <body class="min-h-screen flex justify-center items-center bg-custom-bg font-segoe p-4 md:p-6">
+
+  <!-- overlay transition  -->
+  <div id="transitionOverlay" class="transition-overlay"></div>
  
   <!-- log in form -->
-  <div class="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] xl:max-w-[800px]
+  <div id="pageContent" class="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] xl:max-w-[800px]
   rounded-custom-24 md:rounded-custom-24 
   shadow-custom 
   bg-custom-white 
@@ -97,7 +101,7 @@
      px-4 md:px-6 lg:px-8">
 
      <!-- choco  -->
-       <label class="block cursor-pointer">
+       <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="cake" value="choco" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -123,7 +127,7 @@
         </label>
 
          <!-- mocha  -->
-       <label class="block cursor-pointer">
+       <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="cake" value="mocha" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -149,7 +153,7 @@
         </label>
 
          <!-- matcha  -->
-       <label class="block cursor-pointer">
+       <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="cake" value="macha" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -223,6 +227,6 @@
     ?
 </button>
        
-
+<script src="src/fade.js"></script>
 </body>
 </html>

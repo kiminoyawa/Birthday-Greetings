@@ -7,6 +7,7 @@
    <!-- Import Milkyway font -->
   <link href="https://fonts.cdnfonts.com/css/milkyway-3" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="src/style.css">
   <title>BDAY | Color</title>
   
   <!-- Custom Tailwind configuration manual nalang muna-->
@@ -61,9 +62,12 @@
 
 <!-- set the login container in the center of the screen -->
 <body class="min-h-screen flex justify-center items-center bg-custom-bg font-segoe p-4 md:p-6">
+
+   <!-- overlay transition  -->
+  <div id="transitionOverlay" class="transition-overlay"></div>
  
   <!-- log in form -->
-  <div class="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] xl:max-w-[800px]
+  <div id="pageContent" class="w-full max-w-[550px] md:max-w-[650px] lg:max-w-[750px] xl:max-w-[800px]
   rounded-custom-24 md:rounded-custom-24 
   shadow-custom 
   bg-custom-white 
@@ -96,7 +100,7 @@
       px-4 md:px-6 lg:px-8">
 
         <!-- red  -->
-        <label class="block cursor-pointer hover:scale-[110%] transition-all duration-300">
+        <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="color" value="red" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -119,7 +123,7 @@
         </label>
 
          <!-- yellow  -->
-        <label class="block cursor-pointer hover:scale-[110%] transition-all duration-300">
+        <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="color" value="yellow" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -142,7 +146,7 @@
         </label>
 
          <!-- blue  -->
-        <label class="block cursor-pointer hover:scale-[110%] transition-all duration-300">
+        <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="color" value="blue" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -165,7 +169,7 @@
         </label>
 
          <!-- orange  -->
-        <label class="block cursor-pointer hover:scale-[110%] transition-all duration-300">
+        <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="color" value="orange" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -188,7 +192,7 @@
         </label>
 
          <!-- green  -->
-        <label class="block cursor-pointer hover:scale-[110%] transition-all duration-300">
+        <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="color" value="green" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -211,7 +215,7 @@
         </label>
 
          <!-- purple  -->
-        <label class="block cursor-pointer hover:scale-[110%] transition-all duration-300">
+        <label class="block cursor-pointer hover:scale-[105%] transition-all duration-300">
           <input type="radio" name="color" value="purple" class="hidden peer">
           <div class="selection-box bg-custom-white rounded-custom-24 border-2 border-custom-holder
         text-center
@@ -282,6 +286,6 @@
     ?
 </button>
        
-
+ <script src="src/fade.js"></script>
 </body>
 </html>
